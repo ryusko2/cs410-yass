@@ -20,7 +20,7 @@ dateTimeFormat = "%Y%m%d %H:%M:%S"
 
 class yassHistory:
   def_delta = -180     #default "lookback" time is 6 months
-  def_connections = 20 #default number of connections/threads
+  def_connections = 20 #default maximum number of connections/threads
 
 ################################################################################
 # class HistoryThread

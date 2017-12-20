@@ -14,7 +14,7 @@ from datetime import date
 from yassFinOne import FinOne
 
 class Finviz:
-
+  def_connections = 20 #default maximum number of connections/threads
 ################################################################################
 # class FinOneThread
 # Establishes a thread for loading a single stock from finviz.com, and sends
@@ -142,8 +142,8 @@ class Finviz:
     if not os.path.exists(self.prefix):
       os.makedirs(self.prefix)
       
-    #load maximum of 20 stocks at a time
-    connections = min(20,len(self.keepers.queue))
+    #load maximum of Finviz.def_connections stocks at a time
+    connections = min(Finviz.def_connections,len(self.keepers.queue))
     
     #fire off the threads
     threads = []

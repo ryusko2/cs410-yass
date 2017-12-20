@@ -40,6 +40,10 @@ class Param:
     #if os.path.isfile(self.symbols_list):
     #  self.countStocks()
     
+    #make directory for logs if not already there
+    if not os.path.exists('./logs/'):
+      os.makedirs('./logs/')
+    
     self.log_name = "%s.log" % date.strftime(datetime.now(), "%Y%m%d_%H%M%S")
     self.log_file = open("logs/"+self.log_name, 'w')
     self.log('opened log file %s (Param.__init__)' % self.log_name)
