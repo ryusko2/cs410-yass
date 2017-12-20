@@ -1,0 +1,11 @@
+prefix = "."
+#stop-words = "config/lemur-stopwords.txt"
+
+corpus = "file.toml"
+dataset = "dataset"
+index = "idx"
+
+[[analyzers]]
+method = "ngram-word"
+ngram = 1
+filter = "default-unigram-chain"

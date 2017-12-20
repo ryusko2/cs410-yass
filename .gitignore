@@ -1,0 +1,7 @@
+.DS_Store
+cookieData/
+docs/*
+hist/*
+loc.sh
+logs/
+*.pyc

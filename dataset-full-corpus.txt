@@ -1,0 +1,2 @@
+positive    config/positive-words.txt
+negative    config/negative-words.txt
